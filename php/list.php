@@ -35,7 +35,13 @@ $result=$conn->query($sql);
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()) {
         $line = "<tr>"
+        $line .= "<td><input type='radio' id='html' name='selectrow' value=' . $row["ID"] . '></td>"
+        $line .= "<td>" . $row["Name"] . "</td>"
         $line .= "<td>" . $row["Age"] . "</td>"
+        $line .= "<td>" . $row["Sex"] . "</td>"
+        $line .= "<td>" . $row["US_Citizen"] . "</td>"
+        $line .= "<td>" . $row["ID"] . "</td>"
+
         
 
         echo $line
