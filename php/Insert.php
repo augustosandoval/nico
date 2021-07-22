@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Insert</title>
+<title>Insert new User</title>
 </head>
 <body>
 
@@ -33,10 +33,12 @@ echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
 
+
 ?>
 
 <form action="list.php">
 <input type="submit" value="Go to User List" />
+
 </form>
 
 </body>
